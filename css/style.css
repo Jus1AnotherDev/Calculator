@@ -1,0 +1,86 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#content {
+  max-width: 220px;
+  text-align: center;
+  margin: auto;
+  margin-top: 250px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#calculator {
+  border: 1px solid black;
+  width: 220px;
+  text-align: center;
+}
+
+output {
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#calculatorHistory {
+  width: 205px;
+}
+
+#inputNumber {
+  width: 205px;
+}
+
+#calculatorButtons button {
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+}
+
+#calculatorButtonsSetTwo button {
+  margin-top: 5px;
+}
+
+#calculatorButtonsSetTwo .calculatorButtonsClass {
+  display: inline-block;
+}
+
+.grid-item {
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+#oprationButtonsSetTwo button {
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+#oprationButtonsSetTwo {
+  margin-bottom: 5px;
+}
+
+#buttonZero {
+  width: 213px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+}

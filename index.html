@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Calculator">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id="content">
+      <h1>Calculator</h1>
+      <div id="calculator">
+        <output type="number" id="calculatorHistory"></output>
+        <br>
+        <output type="number" id="inputNumber"></output>
+        <br>
+        <div id="calculatorButtons">
+          <button type="button" onclick=allClear()>AC</button>
+          <button type="button" onclick=clearEntry()>CE</button>
+          <button type="button" onclick=additionOperation()>+</button>
+          <button type="button" onclick=subtractionOperation()>-</button>
+        </div>
+        <div id="calculatorButtonsSetTwo">
+          <div class="calculatorButtonsClass" id="grid">
+            <div id="rowOne">
+              <button type="button" class="grid-item" id="numberOne" onclick=ifButtonPressed(1)>1</button>
+              <button type="button" class="grid-item" id="numberTwo" onclick=ifButtonPressed(2)>2</button>
+              <button type="button" class="grid-item" onclick=ifButtonPressed(3)>3</button>
+            </div>
+            <div id="rowTwo">
+              <button type="button" class="grid-item" onclick=ifButtonPressed(4)>4</button>
+              <button type="button" class="grid-item" onclick=ifButtonPressed(5)>5</button>
+              <button type="button" class="grid-item" onclick=ifButtonPressed(6)>6</button> 
+            </div>
+            <div id="rowThree">
+              <button type="button" class="grid-item" onclick=ifButtonPressed(7)> 7</button>
+              <button type="button" class="grid-item" onclick=ifButtonPressed(8)>8</button>
+              <button type="button" class="grid-item" onclick=ifButtonPressed(9)>9</button>  
+            </div>
+          </div>
+          <div class="calculatorButtonsClass" id="oprationButtonsSetTwo">
+            <button type="button" id="multiply" onclick=multiplicationOperation()>*</button>
+            <button type="button" id="divide" onclick=divisionOperation()>/</button>
+            <button type="button" id="equals" onclick=equalsOperation()>=</button>
+          </div>
+        </div>
+        <button type="button" id="buttonZero" onclick=ifButtonPressed(0)>0</button>
+      </div>
+    </div>
+    <script src="main.js">
+    </script>
+  </body>
+  <footer>
+    <p>Made by: <a href="https://github.com/Nitin529">Nitin</a></p>
+  </footer>
+</html>
